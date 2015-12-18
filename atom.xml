@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Richird Fang's Blog]]></title>
   <link href="http://mojito515.github.io/atom.xml" rel="self"/>
   <link href="http://mojito515.github.io/"/>
-  <updated>2015-12-18T13:51:29+08:00</updated>
+  <updated>2015-12-18T14:33:18+08:00</updated>
   <id>http://mojito515.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
-    
+    <name><![CDATA[mojito]]></name>
+    <email><![CDATA[mojito515@126.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[1765]]></title>
+    <link href="http://mojito515.github.io/blog/2015/12/18/1765/"/>
+    <updated>2015-12-18T14:17:06+08:00</updated>
+    <id>http://mojito515.github.io/blog/2015/12/18/1765</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Test]]></title>
+    <link href="http://mojito515.github.io/blog/2015/12/18/test/"/>
+    <updated>2015-12-18T13:52:07+08:00</updated>
+    <id>http://mojito515.github.io/blog/2015/12/18/test</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[中文test]]></title>
