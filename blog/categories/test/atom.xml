@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Richird Fang's Blog]]></title>
-  <link href="http://mojito515.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Test | Richird Fang's Blog]]></title>
+  <link href="http://mojito515.github.io/blog/categories/test/atom.xml" rel="self"/>
   <link href="http://mojito515.github.io/"/>
   <updated>2015-12-20T23:40:13+08:00</updated>
   <id>http://mojito515.github.io/</id>
@@ -18,15 +18,6 @@
     <link href="http://mojito515.github.io/blog/2015/12/18/1765/"/>
     <updated>2015-12-18T14:17:06+08:00</updated>
     <id>http://mojito515.github.io/blog/2015/12/18/1765</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Test]]></title>
-    <link href="http://mojito515.github.io/blog/2015/12/18/test/"/>
-    <updated>2015-12-18T13:52:07+08:00</updated>
-    <id>http://mojito515.github.io/blog/2015/12/18/test</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
