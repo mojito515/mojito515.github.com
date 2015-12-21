@@ -4,7 +4,7 @@
   <title><![CDATA[方晨曦的网络日志]]></title>
   <link href="http://mojito515.github.io/atom.xml" rel="self"/>
   <link href="http://mojito515.github.io/"/>
-  <updated>2015-12-21T14:09:08+08:00</updated>
+  <updated>2015-12-21T14:47:54+08:00</updated>
   <id>http://mojito515.github.io/</id>
   <author>
     <name><![CDATA[mojito]]></name>
@@ -45,6 +45,16 @@
 <img src="121.jpg" alt="我的图片" /></p>
 
 <h2>df</h2>
+
+<p><img src="http://mojito515.github.io/images/121.jpg" alt="我的图片" /></p>
+
+<h2>dfdf</h2>
+
+<p>Error processing input, expected syntax: {% img [class name(s)] [http[s]:/]/path/to/image [width [height]] [title text | &ldquo;title text&rdquo; [&ldquo;alt text&rdquo;]] %}</p>
+
+<h2>dfdfdf</h2>
+
+<p><img src="http://mojito515.github.io/images/121.jpg"></p>
 ]]></content>
   </entry>
   
