@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Test | 方晨曦的网络日志]]></title>
   <link href="http://mojito515.github.io/blog/categories/test/atom.xml" rel="self"/>
   <link href="http://mojito515.github.io/"/>
-  <updated>2015-12-21T15:02:40+08:00</updated>
+  <updated>2015-12-21T15:46:10+08:00</updated>
   <id>http://mojito515.github.io/</id>
   <author>
     <name><![CDATA[mojito]]></name>
@@ -32,28 +32,26 @@
 <!--more-->
 
 
-<p>解决了乱码
-<img src="girl.jpg" alt="我的图片" /></p>
+<p>解决了乱码</p>
 
-<h2>df</h2>
+<h1>df</h1>
 
-<p><img src="/images/121.jpg" alt="我的图片" /></p>
+<p>{% img <a href="http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg">http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg</a> %}</p>
 
-<h2>dfdf</h2>
+<h1>dfdf</h1>
 
-<p>Error processing input, expected syntax: {% img [class name(s)] [http[s]:/]/path/to/image [width [height]] [title text | "title text" ["alt text"]] %}</p>
+<p>{% img left <a href="http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg">http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg</a> beautiful %}</p>
 
-<h2>dfdfdf</h2>
+<h1>dfdfdf</h1>
 
-<p><img src="/images/girl.jpg"></p>
+<p>{% img <a href="http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg">http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg</a> 500 500 &lsquo;asdf&rsquo; &lsquo;qwer&rsquo;%}</p>
 
-<h2>dfdfdfdf</h2>
+<pre><code class="public static void main(){">
+}
+</code></pre>
 
-<p><img src="/images/girl.jpg" /></p>
-
-<h2>dfdfdfdfdf</h2>
-
-<p><img src="../../../../../images/girl.png" title="A brick" alt="a brick" /></p>
+<pre><code>public another code with tab
+</code></pre>
 ]]></content>
   </entry>
   
