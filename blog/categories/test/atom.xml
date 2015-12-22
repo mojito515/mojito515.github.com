@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Test | 方晨曦的网络日志]]></title>
   <link href="http://mojito515.github.io/blog/categories/test/atom.xml" rel="self"/>
   <link href="http://mojito515.github.io/"/>
-  <updated>2015-12-21T15:46:10+08:00</updated>
+  <updated>2015-12-22T12:56:14+08:00</updated>
   <id>http://mojito515.github.io/</id>
   <author>
     <name><![CDATA[mojito]]></name>
@@ -32,26 +32,25 @@
 <!--more-->
 
 
-<p>解决了乱码</p>
+<p>解决了乱码
+<a href="#jump">##XXXX</a></p>
 
 <h1>df</h1>
 
-<p>{% img <a href="http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg">http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg</a> %}</p>
+<p><img class="<a" src="href="http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg">http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg</a>"></p>
 
 <h1>dfdf</h1>
 
-<p>{% img left <a href="http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg">http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg</a> beautiful %}</p>
+<p><img class="left <a" src="href="http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg">http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg</a>" title="beautiful" ></p>
 
 <h1>dfdfdf</h1>
 
-<p>{% img <a href="http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg">http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg</a> 500 500 &lsquo;asdf&rsquo; &lsquo;qwer&rsquo;%}</p>
+<p><img class="<a" src="href="http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg">http://7xpd26.com1.z0.glb.clouddn.com/girl.jpg</a>" width="500" height="500" title="&lsquo;asdf&rsquo; &lsquo;qwer&rsquo;" ></p>
 
-<pre><code class="public static void main(){">
-}
+<pre><code class="java">public void main
 </code></pre>
 
-<pre><code>public another code with tab
-</code></pre>
+<p><span id="jump">Hello World</span></p>
 ]]></content>
   </entry>
   

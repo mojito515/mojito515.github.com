@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://mojito515.github.io/blog/2015/12/21/yong-jenkinsshi-xian-chi-xu-ji-cheng-de-da-jian/</loc>
+    <lastmod>2015-12-21T17:40:20+08:00</lastmod>
+  </url>
+  <url>
     <loc>http://mojito515.github.io/blog/2015/12/18/1765/</loc>
     <lastmod>2015-12-18T14:17:06+08:00</lastmod>
   </url>
@@ -23,5 +27,8 @@
   </url>
   <url>
     <loc>http://mojito515.github.io/blog/categories/test/</loc>
+  </url>
+  <url>
+    <loc>http://mojito515.github.io/blog/categories/ci/</loc>
   </url>
 </urlset>
