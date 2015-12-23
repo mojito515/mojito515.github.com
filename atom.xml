@@ -4,10 +4,10 @@
   <title><![CDATA[方晨曦的网络日志]]></title>
   <link href="http://mojito515.github.io/atom.xml" rel="self"/>
   <link href="http://mojito515.github.io/"/>
-  <updated>2015-12-23T17:59:32+08:00</updated>
+  <updated>2015-12-23T18:07:42+08:00</updated>
   <id>http://mojito515.github.io/</id>
   <author>
-    <name><![CDATA[sunland's RD]]></name>
+    <name><![CDATA[mojito515@126.com]]></name>
     <email><![CDATA[mojito515@126.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -18,7 +18,10 @@
     <link href="http://mojito515.github.io/blog/2015/12/21/yong-jenkinsshi-xian-chi-xu-ji-cheng-de-da-jian/"/>
     <updated>2015-12-21T17:40:20+08:00</updated>
     <id>http://mojito515.github.io/blog/2015/12/21/yong-jenkinsshi-xian-chi-xu-ji-cheng-de-da-jian</id>
-    <content type="html"><![CDATA[<ul>
+    <content type="html"><![CDATA[<!--more-->
+
+
+<ul>
 <li><h3>背景</h3>
 
 <p><strong>scrum</strong>的敏捷开发当中有很多促进项目推进的办法和方案,
