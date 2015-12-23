@@ -4,7 +4,7 @@
   <title><![CDATA[方晨曦的网络日志]]></title>
   <link href="http://mojito515.github.io/atom.xml" rel="self"/>
   <link href="http://mojito515.github.io/"/>
-  <updated>2015-12-23T18:09:30+08:00</updated>
+  <updated>2015-12-23T19:27:37+08:00</updated>
   <id>http://mojito515.github.io/</id>
   <author>
     <name><![CDATA[mojito515@126.com]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[硝烟中的Scrum——读书笔记]]></title>
+    <link href="http://mojito515.github.io/blog/2015/12/23/xiao-yan-zhong-de-scrum-du-shu-bi-ji/"/>
+    <updated>2015-12-23T18:10:26+08:00</updated>
+    <id>http://mojito515.github.io/blog/2015/12/23/xiao-yan-zhong-de-scrum-du-shu-bi-ji</id>
+    <content type="html"><![CDATA[<!--more-->
+
+
+<p>产品的<strong>Story</strong>产出需求池中的<strong>BackLog</strong>，产品的BackLog有两种表现形式：<br/>
+* excel表格 ：详细记录并且留存
+* 索引卡 ：用作互动，展开演示（在计划会议上）</p>
+
+<p>每个BackLog由三个<strong>维度</strong>组成：<br/>
+* 重要性 ：由产品经理把控
+* 范围 ： 涉及到哪些业务或者技术团队
+* 出事估值 ： 预估完成需求的时间，由开发人员讨论完成之后把控</p>
+
+<p><img src="http://mojito515.github.io/Users/fangrichird/Pictures/blog/scrum-product-story.png" alt="produc-story" /></p>
+
+<p><strong>扑克牌时间估算法</strong>，可以客观地估算每个开发Story的时间</p>
+
+<p><img src="http://mojito515.github.io/Users/fangrichird/Pictures/blog/scrum-backlog.png" alt="backlog" /></p>
+
+<p><strong>Focus Factor</strong> 是从团队中以往的Sprint完成情况中总结出来的，其中<strong>Man-Days</strong>汇总了
+全部成员的可用人天，但前提是你的小伙伴都是<strong>全栈工程师</strong></p>
+
+<p><img src="http://mojito515.github.io/Users/fangrichird/Pictures/blog/scrum-focus-factor.png" alt="focus-factor" /></p>
+
+<p>Sprint Master 在计划会议完成之后，负责产出一个doc，来诠释这个Sprint的
+计划时间、意义、实现内容、目标，并且公示给全部人</p>
+
+<p><img src="http://mojito515.github.io/Users/fangrichird/Pictures/blog/scrum-sprint-doc.png" alt="sprint-doc" /></p>
+
+<p><strong>XP</strong>区别于<strong>Agile</strong> ：<br/>
+* 敏捷开发侧重管理和组织实践<br/>
+* XP侧重编程实践</p>
+
+<p><img src="http://mojito515.github.io/Users/fangrichird/Pictures/blog/scrum-xp.png" alt="xp" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[构建持续集成平台]]></title>
