@@ -4,7 +4,7 @@
   <title><![CDATA[方晨曦的网络日志]]></title>
   <link href="http://mojito515.github.io/atom.xml" rel="self"/>
   <link href="http://mojito515.github.io/"/>
-  <updated>2016-03-09T19:28:35+08:00</updated>
+  <updated>2016-03-09T19:32:13+08:00</updated>
   <id>http://mojito515.github.io/</id>
   <author>
     <name><![CDATA[mojito515@126.com]]></name>
@@ -80,15 +80,6 @@
 <p><img src="http://7xpd26.com1.z0.glb.clouddn.com/gitlab_review.png" alt="review" /></p>
 
 <p>至此，一次完整的代码提交过程就完成了。当然，在项目上线之后，会有“下游”的分支，例如 生产版本的分支、预生产版本的分支也会加入到protected branch的行列。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[gitlab]]></title>
-    <link href="http://mojito515.github.io/blog/2016/03/09/gitlab/"/>
-    <updated>2016-03-09T11:48:25+08:00</updated>
-    <id>http://mojito515.github.io/blog/2016/03/09/gitlab</id>
-    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
