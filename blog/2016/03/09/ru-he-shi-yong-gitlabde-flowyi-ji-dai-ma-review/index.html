@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>硝烟中的Scrum——读书笔记 - 方晨曦的网络日志</title>
+  <title>如何使用gitlab的flow以及代码review - 方晨曦的网络日志</title>
   <meta name="author" content="mojito515@126.com">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mojito515.github.io/blog/2015/12/23/xiao-yan-zhong-de-scrum-du-shu-bi-ji">
+  <link rel="canonical" href="http://mojito515.github.io/blog/2016/03/09/ru-he-shi-yong-gitlabde-flowyi-ji-dai-ma-review">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/bootstrap/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -95,7 +95,7 @@
   
   <header class="page-header">
     
-      <h1 class="entry-title">硝烟中的Scrum——读书笔记</h1>
+      <h1 class="entry-title">如何使用gitlab的flow以及代码review</h1>
     
     
       <p class="meta">
@@ -104,7 +104,7 @@
 
 
 
-<time class='entry-date' datetime='2015-12-23T18:10:26+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>6:10 pm</span></time>
+<time class='entry-date' datetime='2016-03-09T11:50:02+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:50 am</span></time>
         
         
          | <a href="#comments">Comments</a>
@@ -117,44 +117,65 @@
 <div class="entry-content"><!--more-->
 
 
-<p>产品的<strong>Story</strong>产出需求池中的<strong>BackLog</strong>，产品的BackLog有两种表现形式：</p>
+<h3>Git工作流</h3>
+
+<p>我们在工作中经常用到git来管理自己的代码，也会涉及到多人协作的场景，
+被广泛使用的三种工作流如下：</p>
 
 <ul>
-<li>Excel表格 ：详细记录并且留存</li>
-<li>索引卡 ：用作互动，展开演示（在计划会议上）</li>
+<li><h4>Git flow</h4></li>
+<li><h4>Github flow</h4></li>
+<li><h4>Gitlab flow</h4></li>
 </ul>
 
 
-<p>每个BackLog由三个<strong>维度</strong>组成：</p>
+<h5>以下只简单总结三种flow的特点和弊端,具体的介绍和比较请移步阮一峰老师的文章<a href="http://7xpd26.com1.z0.glb.clouddn.com/gitlab_create_project.png">《Git工作流》</a></h5>
 
-<ul>
-<li>重要性 ：由产品经理把控</li>
-<li>范围 ： 涉及到哪些业务或者技术团队</li>
-<li>出事估值 ： 预估完成需求的时间，由开发人员讨论完成之后把控</li>
-</ul>
+<h4>Git flow</h4>
 
+<blockquote><p>典型的长期维护master分支和develop分支，因为是FDD（功能驱动开发），所以会在协作开发中衍生出 功能分支（feature branch）、补丁分支（hotfix branch）、预发版分支（release branch），完成之后会合并到develop或者master分支，之后删除。优点是清晰可控，但这个模式是基于“版本发布”的，目标是一段时间产出一个新版本，不适合“持续发布”的网站开发。</p></blockquote>
 
-<p><img src="http://7xpd26.com1.z0.glb.clouddn.com/scrum-product-story.png" alt="produc-story" /></p>
+<h4>Github flow</h4>
 
-<p><strong>扑克牌时间估算法</strong>，可以客观地估算每个开发Story的时间</p>
+<blockquote><p>只有一个master长期分支，需要协同的人可以fork代码（其实就是新建了一个自己的分支，并且pull到了master上的代码），当你的功能需求代码完成之后，或者需要讨论的时候，就向master发起一个pull request。通知到别人评审、讨论、review你的代码，方便的是，在request提交之后评审的过程中，你还可以提交代码。等到你的request被accept，分支会合并到master，重新部署后，你原来的那个分支就可以删除啦。缺点是有时你的产品发布的代码版本和你master最新的版本并不是一个（比如因为苹果审核需要时间，那么你的代码就需要另一个分支来保留线上版本）。</p></blockquote>
 
-<p><img src="http://7xpd26.com1.z0.glb.clouddn.com/scrum-backlog.png" alt="backlog" /></p>
+<h4>Gitlab flow</h4>
 
-<p><strong>Focus Factor</strong> 是从团队中以往的Sprint完成情况中总结出来的，其中<strong>Man-Days</strong>汇总了
-全部成员的可用人天，但前提是你的小伙伴都是<strong>全栈工程师</strong></p>
+<blockquote><p>引入了“上游优先”（upsteam first）的原则。只存在一个主分支master，它是所有其他分支的"上游"。只有上游分支采纳的代码变化，才能应用到其他分支。版本发布"的项目，建议的做法是每一个稳定版本，都要从master分支拉出一个分支。使用gitlab建立group project，可以将成员全部添加进小组中，每个人的提交都以分支合并进master分支的方式进行，我们可以将master设置成protected branch，这样就做到了强制代码review的机制，利于提升代码的质量。Issue 用于 Bug追踪和需求管理。建议先新建 Issue，再新建对应的功能分支。</p></blockquote>
 
-<p><img src="http://7xpd26.com1.z0.glb.clouddn.com/scrum-focus-factor.png" alt="focus-factor" /></p>
+<hr />
 
-<p>Sprint Master 在计划会议完成之后，负责产出一个doc，来诠释这个Sprint的
-计划时间、意义、实现内容、目标，并且公示给全部人</p>
+<h3>Gitlab如何使用</h3>
 
-<p><img src="http://7xpd26.com1.z0.glb.clouddn.com/scrum-sprint-doc.png" alt="sprint-doc" /></p>
+<p>首先，在gitlab的console中创建工程，创建好后会有如下图的命令提示，告知你怎样在本地创建代码项目并push（使用sourcetree更简单）：</p>
 
-<p><strong>XP</strong>区别于<strong>Agile</strong> ：<br/>
-* 敏捷开发侧重管理和组织实践<br/>
-* XP侧重编程实践</p>
+<p><img src="http://7xpd26.com1.z0.glb.clouddn.com/gitlab_create_project.png" alt="create project" /></p>
 
-<p><img src="http://7xpd26.com1.z0.glb.clouddn.com/scrum-xp.png" alt="xp" /></p>
+<p>项目创建完成之后，给项目添加成员：</p>
+
+<p><img src="http://7xpd26.com1.z0.glb.clouddn.com/gitlab_new_member.png" alt="new member" /></p>
+
+<p>把master分支设置成受保护分支，这样成员在提交代码的时候，只能先提交merge request（强制做代码review）：</p>
+
+<p><img src="http://7xpd26.com1.z0.glb.clouddn.com/gitlab_protected_branch.png" alt="proetcted branch" /></p>
+
+<p>在本地，以developer的身份push代码，会显示不成功：</p>
+
+<p><img src="http://7xpd26.com1.z0.glb.clouddn.com/gitlab_push_error.png" alt="error" /></p>
+
+<p>正常流程中，是先本地从master上拉取新建分支：</p>
+
+<p><img src="http://7xpd26.com1.z0.glb.clouddn.com/gitlab_new_feature.png" alt="new branch" /></p>
+
+<p>当有代码需要提交push的时候，在gitlab的console中创建merge request 完成代码向master分支的提交：</p>
+
+<p><img src="http://7xpd26.com1.z0.glb.clouddn.com/gitlab_merge_request.png" alt="merge request" /></p>
+
+<p>负责review的小伙伴可以对代码进行评论，在accept之前，该分支中再次push的commit都归属于这次merge request。accept之后，分支自动合并到master分支中（可以勾选直接删除merge的功能分支）:</p>
+
+<p><img src="http://7xpd26.com1.z0.glb.clouddn.com/gitlab_review.png" alt="review" /></p>
+
+<p>至此，一次完整的代码提交过程就完成了。当然，在项目上线之后，会有“下游”的分支，例如 生产版本的分支、预生产版本的分支也会加入到protected branch的行列。</p>
 </div>
 
 
@@ -170,14 +191,8 @@
 
 
 
-<time class='entry-date' datetime='2015-12-23T18:10:26+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>6:10 pm</span></time>
+<time class='entry-date' datetime='2016-03-09T11:50:02+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:50 am</span></time>
       
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/min-jie-kai-fa/'>敏捷开发</a>
-  
-</span>
 
 
     </p>
@@ -196,7 +211,7 @@
       <section>
           <h1>Comments</h1>
           <div id="comments" aria-live="polite"><!-- Duoshuo Comment BEGIN -->
-<div class="ds-thread" data-title="硝烟中的Scrum——读书笔记"></div>
+<div class="ds-thread" data-title="如何使用gitlab的flow以及代码review"></div>
 <script type="text/javascript">
   var duoshuoQuery = {short_name:"mojito515"};
     (function() {
@@ -215,14 +230,10 @@
     <ul class="pager">
       
       <li class="previous"><a class="basic-alignment left"
-        href="/blog/2015/12/21/yong-jenkinsshi-xian-chi-xu-ji-cheng-de-da-jian/" title="Previous Post:
-        构建持续集成平台">&laquo; 构建持续集成平台</a></li>
+        href="/blog/2016/03/09/gitlab/" title="Previous Post:
+        gitlab">&laquo; gitlab</a></li>
       
       <li><a href="/blog/archives">Blog Archives</a></li>
-      
-      <li class="next"><a class="basic-alignment right" href="/blog/2016/03/09/gitlab/"
-        title="Next Post: gitlab">gitlab
-        &raquo;</a></li>
       
     </ul>
   </footer>
