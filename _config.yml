@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://mojito515.github.io
-title: 晨曦的网络日志
-subtitle: 技术博客&WiKi....
-author: 晨曦
+title: 鏂规櫒鏇︾殑缃戠粶鏃ュ織
+subtitle: blogs & WiKi related on Java 
+author: mojito515@126.com
 simple_search: https://www.baidu.com
 description:
 
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:mojito515@126.com
+email: mojito515@126.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -91,11 +91,15 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+#disqus_short_name: mojito515
+#disqus_show_comment_count: false
 
 # Google Analytics
 google_analytics_tracking_id:
 
 # Facebook Like
-facebook_like: false
+facebook_like: falsea
+
+# duoshuo comments
+duoshuo_comments: true
+duoshuo_short_name: mojito515
