@@ -4,7 +4,7 @@
   <title><![CDATA[方晨曦的网络日志]]></title>
   <link href="http://mojito515.github.io/atom.xml" rel="self"/>
   <link href="http://mojito515.github.io/"/>
-  <updated>2016-03-09T19:32:13+08:00</updated>
+  <updated>2016-08-25T14:57:31+08:00</updated>
   <id>http://mojito515.github.io/</id>
   <author>
     <name><![CDATA[mojito515@126.com]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[尝试Ulysses]]></title>
+    <link href="http://mojito515.github.io/blog/2016/08/25/chang-shi-ulysses/"/>
+    <updated>2016-08-25T11:54:06+08:00</updated>
+    <id>http://mojito515.github.io/blog/2016/08/25/chang-shi-ulysses</id>
+    <content type="html"><![CDATA[<!--more-->
+
+
+<h2>Ulysess</h2>
+
+<p>这是一篇用工具编辑的测试文档。
+段落把握好。
+谢谢 <strong>完</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[如何使用gitlab的flow以及代码review]]></title>
